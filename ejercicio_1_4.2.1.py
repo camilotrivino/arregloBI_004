@@ -14,8 +14,21 @@ promedio=acumulador/9
 print(f"suma: {acumulador}")
 print(f"promedio: {promedio}")
 print(f"suma: {suma}")        
-
-
+mayor=0
+menor=100
+for i in range(3):
+    for j in range(3):
+        if matriz[i][j]>mayor:
+            mayor=matriz[i][j]
+        if matriz[i][j]<menor:
+            menor=matriz[i][j]
+print(f"mayor: {mayor}")            
+print(f"menor: {menor}")
+for i in range(3):
+    for j in range(3):
+        if i==j:
+            print(matriz[i][j])
+            
 
 
 
