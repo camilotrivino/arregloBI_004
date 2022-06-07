@@ -5,7 +5,15 @@ for i in range(3):
     for j in range(3):
         matriz[i][j]=random.randint(0,100)
 print(matriz)
-
+acumulador=0
+for i in range(3):
+    for j in range(3):
+        acumulador+=matriz[i][j]
+suma=matriz.sum()
+promedio=acumulador/9
+print(f"suma: {acumulador}")
+print(f"promedio: {promedio}")
+print(f"suma: {suma}")        
 
 
 
